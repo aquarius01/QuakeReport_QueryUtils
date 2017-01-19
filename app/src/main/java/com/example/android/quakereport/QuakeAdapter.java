@@ -41,7 +41,7 @@ public class QuakeAdapter extends ArrayAdapter<Earthquake> {
         TextView Magnitude = (TextView) listItemView.findViewById(R.id.magnitude_text_view);
         // Get the Miwok translation from the currentWord object and set this text on
         // the Miwok TextView.
-        Magnitude.setText(currentQuake.getMagnitudeOfQuake().toString());
+        Magnitude.setText(currentQuake.getMagnitudeOfQuake());
 
         // Find the TextView in the list_item.xml layout with the ID default_text_view.
         TextView Place = (TextView) listItemView.findViewById(R.id.place_text_view);

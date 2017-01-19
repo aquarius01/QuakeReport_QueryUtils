@@ -9,7 +9,7 @@ import java.util.Date;
 public class Earthquake {
 
     /** Int resource ID for the default magnitute of the Earthquake */
-    private Double mMagnitudeOfQuake;
+    private String mMagnitudeOfQuake;
 
     /** String for the place of the Earthquake */
     private String mPlaceOfQuake;
@@ -24,7 +24,7 @@ public class Earthquake {
      * @param placeOfQuake is the int corresponds to Place of guake.
      * @param dateOfQuake is the Date class objest correspods to Date and time od quake.
      */
-    public Earthquake(Double magnitudeOfQuake, String placeOfQuake, String dateOfQuake) {
+    public Earthquake(String magnitudeOfQuake, String placeOfQuake, String dateOfQuake) {
         mMagnitudeOfQuake = magnitudeOfQuake;
         mPlaceOfQuake = placeOfQuake;
         mDateOfQuake = dateOfQuake;
@@ -33,7 +33,7 @@ public class Earthquake {
     /**
      * Get the string resource ID for the default translation of the word.
      */
-    public Double getMagnitudeOfQuake() {
+    public String getMagnitudeOfQuake() {
         return mMagnitudeOfQuake;
     }
 
